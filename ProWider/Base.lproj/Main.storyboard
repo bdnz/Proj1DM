@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ProWider" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo-1520531158340-44015069e78e" translatesAutoresizingMaskIntoConstraints="NO" id="iVc-9q-bpQ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am a" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hio-7o-LUX">
+                                <rect key="frame" x="20" y="64" width="374" height="62"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <button opaque="NO" alpha="0.55000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hap-Xn-FnD">
+                                <rect key="frame" x="0.0" y="176" width="190" height="77"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="4Je-jE-Tbv"/>
+                                    <constraint firstAttribute="width" constant="190" id="lap-Hu-SNu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="54"/>
+                                <state key="normal" title="Provider">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="ProviderBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QeO-Ee-dBp"/>
+                                    <action selector="ProviderBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fQV-d7-O4w"/>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" alpha="0.55000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JsP-U9-vVu">
+                                <rect key="frame" x="228" y="176" width="186" height="77"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="186" id="QoG-f7-M05"/>
+                                    <constraint firstAttribute="height" constant="77" id="rzq-Dk-hCU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="54"/>
+                                <state key="normal" title="Receiver">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="CustomerBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8dC-nM-Yxu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkF-or-AS9">
+                                <rect key="frame" x="20" y="552" width="374" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="31"/>
+                                <state key="normal" title="Already Registered?">
+                                    <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="RegisteredBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ygq-rE-IqA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iVc-9q-bpQ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="1e7-4f-13u"/>
+                            <constraint firstItem="iVc-9q-bpQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1hD-q8-5x5"/>
+                            <constraint firstItem="lkF-or-AS9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6v6-5K-wD0"/>
+                            <constraint firstItem="Hap-Xn-FnD" firstAttribute="top" secondItem="Hio-7o-LUX" secondAttribute="bottom" constant="50" id="90s-Ev-bTd"/>
+                            <constraint firstItem="Hap-Xn-FnD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Nne-ue-HuQ"/>
+                            <constraint firstItem="JsP-U9-vVu" firstAttribute="top" secondItem="Hio-7o-LUX" secondAttribute="bottom" constant="50" id="QFh-3T-4bS"/>
+                            <constraint firstItem="Hio-7o-LUX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Qrv-xJ-J3W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lkF-or-AS9" secondAttribute="trailing" constant="20" id="WUr-VV-wvK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lkF-or-AS9" secondAttribute="bottom" constant="260" id="d3e-dj-ike"/>
+                            <constraint firstItem="lkF-or-AS9" firstAttribute="top" secondItem="JsP-U9-vVu" secondAttribute="bottom" constant="299" id="kri-pv-P8Q"/>
+                            <constraint firstItem="lkF-or-AS9" firstAttribute="top" secondItem="Hap-Xn-FnD" secondAttribute="bottom" constant="299" id="l1j-Nl-cOH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hio-7o-LUX" secondAttribute="trailing" constant="20" id="peM-DQ-OGs"/>
+                            <constraint firstItem="Hio-7o-LUX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="pjX-cU-hbg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JsP-U9-vVu" secondAttribute="trailing" id="rH2-aj-WcB"/>
+                            <constraint firstItem="iVc-9q-bpQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="z7c-RS-WWo"/>
+                            <constraint firstItem="iVc-9q-bpQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zGO-st-ZO6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="photo-1520531158340-44015069e78e" width="1000" height="597"/>
+    </resources>
+</document>
