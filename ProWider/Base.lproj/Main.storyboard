@@ -98,6 +98,21 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="IRA-Ny-NtA">
+            <objects>
+                <viewController id="WKp-nS-APw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NWs-1E-AgW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="wtm-D7-nnp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QQn-Od-qnL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="919" y="115"/>
+        </scene>
     </scenes>
     <resources>
         <image name="photo-1520531158340-44015069e78e" width="1000" height="597"/>

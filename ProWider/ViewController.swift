@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 
 
@@ -26,6 +27,29 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
+   let realm = try! Realm()
+        
+        print (Realm.Configuration.defaultConfiguration.fileURL)
+        
+        var APPUsersData = UsersData()
+        APPUsersData.Name = "Pourya"
+        APPUsersData.LastName = ""
+        APPUsersData.Gender = "Male"
+        APPUsersData.Address = "Salt Lake City"
+        APPUsersData.Name = "Samantha"
+        APPUsersData.LastName = "Deniz"
+        APPUsersData.Gender = "Female"
+        APPUsersData.Address = ""
+        APPUsersData.Name = "Moha"
+        APPUsersData.LastName = "Jebelli"
+        APPUsersData.Gender = "Male"
+        APPUsersData.Address = "3299 Canyon Road Salt Lake City"
+        
+        
+        try! realm.write{
+            realm.add(APPUsersData)
+        }
+        
     }
 
 
